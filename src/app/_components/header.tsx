@@ -3,7 +3,7 @@ import AccessibilitySelect from './accessibilitySelect';
 
 const Header = () => {
   return (
-    <header className='body-font mb-20'>
+    <header className='body-font mb-12'>
       <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
         <div className='flex title-font font-medium items-center mb-4 md:mb-0'>
           <h2 className='text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight'>

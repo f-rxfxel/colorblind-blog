@@ -19,7 +19,13 @@ type Props = {
 };
 
 const AccessibilitySelect = ({ text = 'Accessibility', icon }: Props) => {
-  const [position, setPosition] = React.useState('bottom');
+  const [colorblind, setColorblind] = React.useState(() => {
+    return localStorage.getItem('colorblind') || 'None';
+  });
+
+  React.useEffect(() => {
+    localStorage.setItem('colorblind', colorblind);
+  }, [colorblind]);
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -45,7 +51,10 @@ const AccessibilitySelect = ({ text = 'Accessibility', icon }: Props) => {
       <DropdownMenuContent className='w-56'>
         <DropdownMenuLabel>Daltonism</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
+        <DropdownMenuRadioGroup value={colorblind} onValueChange={setColorblind}>
+          <DropdownMenuRadioItem value='None'>
+            None
+          </DropdownMenuRadioItem>
           <DropdownMenuRadioItem value='Protanopia'>
             Protanopia
           </DropdownMenuRadioItem>
