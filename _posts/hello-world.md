@@ -1,6 +1,6 @@
 ---
-title: "Learn How to Pre-render Pages Using Static Generation with Next.js"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
+title: "Parallels between Shrimp and Human Color Vision"
+excerpt: "The mantis shrimp results are exciting because they provide the first direct evidence of this color identification strategy, but we have reason to believe that the color-vision systems in humans and mantis shrimp may be more similar than they first appear."
 coverImage: "/assets/blog/hello-world/cover.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
