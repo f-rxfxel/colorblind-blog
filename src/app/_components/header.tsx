@@ -13,10 +13,10 @@ const Header = () => {
             .
           </h2>
         </div>
-        <nav className='md:ml-auto md:mr-auto flex flex-wrap gap-8 items-center text-base justify-center'>
-          <a className='mr-5 hover:underline cursor-pointer'>posts</a>
-          <a className='mr-5 hover:underline cursor-pointer'>about</a>
-          <a className='mr-5 hover:underline cursor-pointer'>contact</a>
+        <nav className='md:ml-auto md:mr-auto flex flex-wrap gap-8 items-center text-base justify-center md:mb-0 mb-6'>
+          <a className='md:mr-5 hover:underline cursor-pointer'>posts</a>
+          <a className='md:mr-5 hover:underline cursor-pointer'>about</a>
+          <a className='md:mr-5 hover:underline cursor-pointer'>contact</a>
         </nav>
 
         <AccessibilitySelect icon={'true'} />

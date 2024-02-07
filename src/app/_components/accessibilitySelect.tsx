@@ -20,16 +20,22 @@ type Props = {
 
 const AccessibilitySelect = ({ text = 'Accessibility', icon }: Props) => {
   const [colorblind, setColorblind] = React.useState(() => {
-    return localStorage.getItem('colorblind') || 'None';
+    if (typeof window !== 'undefined') {
+      return window.localStorage.getItem('colorblind') || 'None';
+    }
+    return 'None';
   });
 
   React.useEffect(() => {
-    localStorage.setItem('colorblind', colorblind);
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('colorblind', colorblind);
+    }
   }, [colorblind]);
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant='outline'>
+          {/* possibilidade de passar um ícone via prop ou children */}
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='18'
@@ -37,9 +43,9 @@ const AccessibilitySelect = ({ text = 'Accessibility', icon }: Props) => {
             viewBox='0 0 24 24'
             fill='none'
             stroke='currentColor'
-            stroke-width='2'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            strokeWidth='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'
             className='mr-3'
           >
             <path d='M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z' />
@@ -51,10 +57,11 @@ const AccessibilitySelect = ({ text = 'Accessibility', icon }: Props) => {
       <DropdownMenuContent className='w-56'>
         <DropdownMenuLabel>Daltonism</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuRadioGroup value={colorblind} onValueChange={setColorblind}>
-          <DropdownMenuRadioItem value='None'>
-            None
-          </DropdownMenuRadioItem>
+        <DropdownMenuRadioGroup
+          value={colorblind}
+          onValueChange={setColorblind}
+        >
+          <DropdownMenuRadioItem value='None'>None</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value='Protanopia'>
             Protanopia
           </DropdownMenuRadioItem>
