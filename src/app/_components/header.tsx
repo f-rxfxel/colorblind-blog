@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import AccessibilitySelect from './accessibility-select';
 
+const styles = {
+  text: 'text-sm font-medium tracking-',
+};
+
 const Header = () => {
   return (
     <header className='body-font mb-12'>
@@ -13,10 +17,22 @@ const Header = () => {
             .
           </h2>
         </div>
-        <nav className='md:ml-auto md:mr-auto flex flex-wrap gap-6 items-center text-base justify-center md:mb-0 mb-6'>
-          <a className='md:mr-5 hover:underline cursor-pointer'>posts</a>
-          <a className='md:mr-5 hover:underline cursor-pointer'>about</a>
-          <a className='md:mr-5 hover:underline cursor-pointer'>contact</a>
+        <nav className='md:ml-auto md:mr-auto flex flex-wrap gap-16 items-center text-md justify-center md:mb-0 mb-6'>
+          <a
+            className={`hover:underline cursor-pointer text-sm font-medium tracking-wide`}
+          >
+            Posts
+          </a>
+          <a
+            className={`hover:underline cursor-pointer text-sm font-medium tracking-wide`}
+          >
+            About
+          </a>
+          <a
+            className={`hover:underline cursor-pointer text-sm font-medium tracking-wide`}
+          >
+            Contact
+          </a>
         </nav>
 
         <AccessibilitySelect />

@@ -47,7 +47,7 @@ const AccessibilitySelect = ({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='outline'>
+        <Button variant='outline' className='flex items-center gap-3'>
           {icon}
           {text}
         </Button>
