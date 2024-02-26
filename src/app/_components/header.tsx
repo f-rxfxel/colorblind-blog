@@ -1,9 +1,5 @@
 import Link from 'next/link';
 
-const styles = {
-  text: 'text-sm font-medium tracking-',
-};
-
 const Header = () => {
   return (
     <header className='body-font mb-12'>
