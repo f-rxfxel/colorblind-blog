@@ -1,10 +1,10 @@
 ---
 title: "Parallels between Shrimp and Human Color Vision"
-excerpt: "The mantis shrimp results are exciting because they provide the first direct evidence of this color identification strategy, but we have reason to believe that the color-vision systems in humans and mantis shrimp may be more similar than they first appear."
+excerpt: "Laboratoire de Photobiologie, Muséum National d’Histoire Naturelle, 43 rue Cuvier, 75005 Paris, France"
 coverImage: "/assets/blog/hello-world/cover.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
-  name: Tim Neutkens
+  name: F. Viénot
   picture: "/assets/blog/authors/tim.jpeg"
 ogImage:
   url: "/assets/blog/hello-world/cover.jpg"

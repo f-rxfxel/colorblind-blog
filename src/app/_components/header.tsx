@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import AccessibilitySelect from './accessibility-select';
 
 const styles = {
   text: 'text-sm font-medium tracking-',
@@ -34,8 +33,6 @@ const Header = () => {
             Contact
           </a>
         </nav>
-
-        <AccessibilitySelect />
       </div>
     </header>
   );

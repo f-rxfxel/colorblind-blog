@@ -1,10 +1,10 @@
 ---
 title: "Tetrachromacy — The opposite condition to color blindness"
-excerpt: "Tetrachromacy is common in other animals, such as fish (e.g. goldfish, zebrafish) and birds (e.g. finch, starling). The dimensionality of the perceived color space isn't necessarily proportional to the number of different receptors."
+excerpt: "Department of Experimental Psychology, University of Cambridge, Cambridge CB2 3EB, UK"
 coverImage: "/assets/blog/preview/cover.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
-  name: Joe Cooper
+  name: J. Mollon
   picture: "/assets/blog/authors/joe.jpeg"
 ogImage:
   url: "/assets/blog/preview/cover.jpg"
